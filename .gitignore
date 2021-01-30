@@ -1,6 +1,9 @@
+*.pyc
+
 media/outfolder/*.jpg
 media/outfolder/*.gif
 mysite/static/**/*.jpg
 mysite/static/**/*.jpeg
 mysite/static/**/*.gif
 mysite/static/**/*.png
+
