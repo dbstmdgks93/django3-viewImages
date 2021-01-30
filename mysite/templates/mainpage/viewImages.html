@@ -1,0 +1,9 @@
+{% load static %}
+<h1>View Images</h1>
+{% static 'images/1.jpg' %}
+<!-- <img src="{% static 'images/1.jpg' %}" height=200> -->
+
+{% for dir in dirList %}
+<a href="{{dir}}"><img src="{{dir}}"" height=300></a>
+{% endfor %}
+<br><br>

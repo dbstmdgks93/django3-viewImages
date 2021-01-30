@@ -1,0 +1,11 @@
+{% load static %}
+<h1>View Images Outside of project folder</h1>
+<h2><a href="{% url 'main' %}">View Main</a></h2>
+<h2><a href="{% url 'viewInsideImages' %}">View Images Inside of Project</a></h2>
+<!-- <img src="{% static 'chungha/28.jpg' %}" height=300> -->
+<!-- <img src="{% static 'chungha/29.jpg' %}" height=300> -->
+
+{% for dir in dirList %}
+<img src="{{dir}}" height=300>
+{% endfor %}
+<br><br>
